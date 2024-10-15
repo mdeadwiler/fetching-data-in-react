@@ -6,6 +6,7 @@ const WeatherSearch = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    props.fetchData(city);
     // We'll call the fetch function here
     setCity('');
   };
